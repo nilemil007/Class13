@@ -1,0 +1,86 @@
+@media screen and (min-width: 576px) and (max-width: 767.98px){
+  /* About Me Section */
+  .aboutMe .content p{
+    width: 100%;
+    text-align: justify;
+  }
+  .ampb .item{
+    margin-bottom: 20px;
+  }
+
+  /* Portfolio Section */
+  .port-section .menu li:not(:last-child) {
+    margin-right: 25px;
+  }
+}
+
+@media screen and (max-width: 575.98px){
+  /* Default */
+  h2 {
+    font-size: 38px;
+  }
+
+  /* Hero Section */
+  .hero h2 {
+    margin-top: 40px;
+  }
+  .hero p {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* About Me Section */
+  .aboutMe h2 {
+    font-size: 50px;
+  }
+  .aboutMe .content p{
+    width: 100%;
+    text-align: justify;
+  }
+  .ampb .item{
+    margin-bottom: 20px;
+  }
+
+  /* Portfolio Section */
+  .portfolio h2{
+    font-size: 50px;
+  }
+  .port-section .menu li:not(:last-child) {
+    margin-right: 15px;
+  }
+  /* Photography Section */
+  .photography p {
+    width: 100%;
+    text-align: justify;
+  }
+
+  /* Subscription */
+  .subscribe p {
+    width: 100%;
+    text-align: center;
+    padding: 0px 10px;
+  }
+  .s-form .ff{
+    margin-right: 0;
+  }
+  .ig-custom {
+    justify-content: unset;
+    display: block;
+    width: 96%;
+    margin: 0 auto;
+  }
+  .s-form input[type=email] {
+    width: 100%;
+  }
+  .s-form button {
+    padding: 17px 30px;
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 320.98px){
+  /* Photography Section */
+
+}
