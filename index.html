@@ -11,6 +11,8 @@
     <script src="https://kit.fontawesome.com/cc2d6331a5.js" crossorigin="anonymous"></script>
     <!-- Animate CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- Swipebox -->
+    <link rel="stylesheet" href="assets/css/swipebox.min.css">
 
     <!-- Site Title -->
     <title>Class 13 Assignment</title>
@@ -164,32 +166,44 @@
           </div>
           <div class="col-md-4 ph-m">
             <div class="ph-m-item">
-              <img class="myCapture" src="assets/img/img1.jpg" alt="Photography">
+              <a href="assets/img/img1.jpg" class="swipebox" title="Alone Bird" rel="gallery">
+                <img class="myCapture" src="assets/img/img1.jpg" alt="Photography">
+              </a>
             </div>
           </div>
           <div class="col-md-4 ph-m">
             <div class="ph-m-item">
-              <img class="myCapture" src="assets/img/img2.jpg" alt="Photography">
+              <a href="assets/img/img2.jpg" class="swipebox" title="Flowers" rel="gallery">
+                <img class="myCapture" src="assets/img/img2.jpg" alt="Photography">
+              </a>
             </div>
           </div>
           <div class="col-md-4 ph-m">
             <div class="ph-m-item">
-              <img class="myCapture" src="assets/img/img3.jpg" alt="Photography">
+              <a href="assets/img/img3.jpg" class="swipebox" title="Girl" rel="gallery">
+                <img class="myCapture" src="assets/img/img3.jpg" alt="Photography">
+              </a>
             </div>
           </div>
           <div class="col-md-4 ph-m">
             <div class="ph-m-item">
-              <img class="myCapture" src="assets/img/img4.jpg" alt="Photography">
+              <a href="assets/img/img4.jpg" class="swipebox" title="Hot Air Baloon" rel="gallery">
+                <img class="myCapture" src="assets/img/img5.jpg" alt="Photography">
+              </a>
             </div>
           </div>
           <div class="col-md-4 ph-m">
             <div class="ph-m-item">
-              <img class="myCapture" src="assets/img/img5.jpg" alt="Photography">
+              <a href="assets/img/img5.jpg" class="swipebox" title="Strawberrys" rel="gallery">
+                <img class="myCapture" src="assets/img/img5.jpg" alt="Photography">
+              </a>
             </div>
           </div>
           <div class="col-md-4 ph-m">
             <div class="ph-m-item">
-              <img class="myCapture" src="assets/img/img6.jpg" alt="Photography">
+              <a href="assets/img/img6.jpg" class="swipebox" title="Alone Bird" rel="gallery">
+                <img class="myCapture" src="assets/img/img6.jpg" alt="Photography">
+              </a>
             </div>
           </div>
 
@@ -199,20 +213,22 @@
     </section>
 
     <!-- Subscription -->
-    <div class="subscribe text-center">
-      <div class="subscribe-logo">
-        <img src="assets/img/logo_02.png" alt="subscribe logo">
-      </div>
-      <p>Subscribe to our newsletter to receive news, updates, free stuff and new releases by email. I do not spam.</p>
-      <form class="s-form" action="#">
-        <div class="input-group ig-custom">
-          <div class="form-floating ff">
-            <input type="email" class="form-control" id="floatingInput" placeholder="Enter your email..." required>
-            <label for="floatingInput">Enter your email...</label>
-          </div>
-          <button class="btn btn-primary">subscribe</button>
+    <div class="subscribe text-center overlay">
+      <div class="overlay">
+        <div class="subscribe-logo">
+          <img src="assets/img/logo_02.png" alt="subscribe logo">
         </div>
-      </form>
+        <p>Subscribe to our newsletter to receive news, updates, free stuff and new releases by email. I do not spam.</p>
+        <form class="s-form" action="#">
+          <div class="input-group ig-custom">
+            <div class="form-floating ff">
+              <input type="email" class="form-control" id="floatingInput" placeholder="Enter your email..." required>
+              <label for="floatingInput">Enter your email...</label>
+            </div>
+            <button class="btn btn-primary">subscribe</button>
+          </div>
+        </form>
+      </div>
     </div>
 
     <!-- Footer -->
@@ -248,15 +264,21 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
     <!-- Mixitup -->
     <script src="assets/js/mixitup.min.js"></script>
+    <!-- Swipebox -->
+    <script src="assets/js/jquery.swipebox.min.js"></script>
     <script>
       jQuery(document).ready(function(){
+        // Portfolio Gallery
         var mixer = mixitup('.port-items');
 
+        // Portfolio Active Link
         jQuery('.port-section .menu li').click(function(){
           jQuery('.port-section .menu li').removeClass('active');
           jQuery(this).addClass('active');
         });
 
+        // Photography
+        $(".swipebox").swipebox();
       });
     </script>
   </body>

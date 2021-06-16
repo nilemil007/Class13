@@ -233,7 +233,9 @@ h2{
 
 /* Subscription */
 .subscribe{
-  background: #23232e;
+  background: #23232e url('assets/img/subscrib-bg.jpg') no-repeat center / cover;
+}
+.subscribe .overlay{
   padding: 130px 0px;
 }
 .subscribe-logo img{
