@@ -208,6 +208,7 @@ h2{
   overflow: hidden;
 }
 .ph-m-item img{
+  height: 100%;
   transition: all .3s;
 }
 .ph-m:hover img{
